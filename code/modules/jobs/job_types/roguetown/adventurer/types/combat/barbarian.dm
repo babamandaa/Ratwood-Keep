@@ -61,11 +61,11 @@
 		if("Hunter Killer")
 			H.set_blindness(0)
 			to_chat(H, span_warning("Barbarians are great warriors of the outlands, often regarded as the strongest of their tribes -- should they have any that live. These incredible titans of strength and brutality are motivated most often by a single... all consuming instinct. SURVIVE."))
-			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/crafting, pick(1,2), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/tanning, 1, TRUE)
@@ -98,7 +98,7 @@
 			H.change_stat("intelligence", -1) // The hunter is smarter, more skilled -- but not as tough.
 			H.change_stat("strength", 2) 
 			H.change_stat("constitution", 2)
-			H.change_stat("endurance", 3)
+			H.change_stat("endurance", 1)
 /*
 			if("ROLL THE DICE!")
 				if(prob(49)) // Warrior
